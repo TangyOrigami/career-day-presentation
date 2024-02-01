@@ -1,17 +1,16 @@
 #!/bin/bash
 
-sleep 2
 echo "Booting drivers"
 sleep 2
 echo "Starting"
 sleep 2
-echo "Hello there young one..."
+echo "Hello! I'm a computer program."
 sleep 2
 read -p "What's your name? " user
 sleep 2
 printf "$user,"
 sleep 2
-echo " pick one..."
+echo " pick a number:"
 sleep 2
 colors=('!' '@' '#' '$' '%' '^' '&')
 select color in "${colors[@]}"; do
@@ -52,7 +51,7 @@ select color in "${colors[@]}"; do
 done
 
 echo "Welcome to the Matrix..."
-sleep 2
+sleep 3
 
 dir_handler() {
     cmatrix -C "$user_color" -M "$user"
