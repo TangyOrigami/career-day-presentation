@@ -13,7 +13,7 @@ printf "$user,"
 sleep 2
 echo " pick one..."
 sleep 2
-colors=('!' '@' '#' '$' '%' '^' '&' ')')
+colors=('!' '@' '#' '$' '%' '^' '&')
 select color in "${colors[@]}"; do
     case $color in
         "!")
@@ -42,10 +42,6 @@ select color in "${colors[@]}"; do
             ;;
         "&")
             user_color="White"
-            break
-            ;;
-        ")")
-            user_color="Black"
             break
             ;;
         "Quit")
