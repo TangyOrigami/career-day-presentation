@@ -9,20 +9,17 @@ void main() {
 
 	sleep(2);
 	printf("Booting drivers...\n");
-
 	sleep(2);
 	printf("Starting...\n");
-
 	sleep(2);
 	printf("Hello! I'm a computer program.\n");
-
 	sleep(2);
 	printf("What's your name? ");
-
 	scanf("%s", user);
-	sleep(2);
+	sleep(1);
+	printf("Processing...\n");
+	sleep(1);
 	printf("%s,", user);
-
 	sleep(2);
 	printf(" pick a number:\n");
 	sleep(2);
